@@ -1,0 +1,18 @@
+{
+  "topic": "Security Patterns for Autonomous AI Agents on Solana",
+  "committedAt": "2026-02-04T15:53:00Z",
+  "approach": "Analysis of security considerations unique to AI agents operating on-chain",
+  "areas": [
+    "Key management",
+    "Transaction signing",
+    "Rate limiting",
+    "Permission scoping",
+    "Audit trails",
+    "Recovery mechanisms"
+  ],
+  "sources": [
+    "Solana security documentation",
+    "Agent wallet implementations",
+    "Hackathon project security approaches"
+  ]
+}
