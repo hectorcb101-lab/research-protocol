@@ -1,0 +1,12 @@
+{
+  "fetchedAt": "2026-02-04T15:47:00Z",
+  "sources": [
+    {"name": "Drift Docs - Audits", "url": "https://docs.drift.trade/protocol/risk-and-safety/audits", "status": "fetched", "hash": "drift_audits_hash"},
+    {"name": "OtterSec Homepage", "url": "https://osec.io/", "status": "fetched", "hash": "ottersec_hash"},
+    {"name": "DeFiLlama Solana", "url": "https://defillama.com/chain/Solana", "status": "blocked_403"},
+    {"name": "Kamino Docs", "url": "https://docs.kamino.finance/security/audits", "status": "not_found"},
+    {"name": "Marginfi Docs", "url": "https://docs.marginfi.com/security", "status": "not_found"},
+    {"name": "Sanctum Docs", "url": "https://docs.sanctum.so/security", "status": "timeout"}
+  ],
+  "notes": "Several documentation sites returned 404 or were blocked. Report based on accessible sources."
+}

@@ -1,0 +1,36 @@
+{
+  "topic": "Security Audit Status of Top 10 Solana DeFi Protocols",
+  "committedAt": "2026-02-04T15:46:00Z",
+  "approach": "Systematic review of audit status for major Solana DeFi protocols by TVL",
+  "protocols": [
+    "Jupiter",
+    "Marinade Finance", 
+    "Jito",
+    "Kamino Finance",
+    "Raydium",
+    "Orca",
+    "Sanctum",
+    "Drift Protocol",
+    "Marginfi",
+    "Solend"
+  ],
+  "criteria": [
+    "Number of audits completed",
+    "Audit firms used",
+    "Most recent audit date",
+    "Public audit reports available",
+    "Bug bounty program",
+    "Known incidents/exploits"
+  ],
+  "sources": [
+    "Official protocol documentation",
+    "Audit firm websites",
+    "DeFiLlama for TVL data",
+    "Rekt.news for incident history"
+  ],
+  "limitations": [
+    "Based on publicly available information only",
+    "Point-in-time snapshot",
+    "May not include ongoing/unreleased audits"
+  ]
+}
