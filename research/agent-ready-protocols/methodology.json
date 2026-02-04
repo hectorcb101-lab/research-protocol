@@ -1,0 +1,28 @@
+{
+  "topic": "Agent-Ready Protocols on Solana",
+  "committedAt": "2026-02-04T15:40:00Z",
+  "approach": "Systematic evaluation of major Solana protocols for AI agent integration readiness",
+  "protocols": [
+    "Jupiter (DEX aggregator)",
+    "Helius (RPC/APIs)",
+    "Pyth (oracles)",
+    "Marinade (liquid staking)",
+    "Metaplex (NFTs)",
+    "Solana Pay",
+    "Jito (MEV)"
+  ],
+  "criteria": [
+    "API quality and documentation",
+    "SDK availability (TypeScript, Python, Rust)",
+    "Rate limits and authentication",
+    "Error handling and reliability",
+    "Example code and tutorials",
+    "Agent-specific features (webhooks, streaming)"
+  ],
+  "scoring": "1-5 scale for each criterion, weighted average",
+  "limitations": [
+    "Point-in-time analysis",
+    "Based on public documentation only",
+    "Subjective scoring elements"
+  ]
+}
