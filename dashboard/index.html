@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Protocol - Verifiable Research</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e7;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        .tagline { color: #a1a1aa; font-size: 1.25rem; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 40px rgba(0,212,255,0.1);
+        }
+        .card h3 {
+            color: #00d4ff;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .card p { color: #a1a1aa; line-height: 1.6; }
+        .flow {
+            background: rgba(255,255,255,0.03);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .flow h2 { color: #7c3aed; margin-bottom: 1.5rem; text-align: center; }
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .step {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+            padding: 1rem;
+        }
+        .step-num {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #00d4ff, #7c3aed);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.75rem;
+            font-weight: bold;
+        }
+        .step-title { font-weight: 600; margin-bottom: 0.25rem; }
+        .step-desc { font-size: 0.875rem; color: #a1a1aa; }
+        .arrow { color: #7c3aed; font-size: 1.5rem; }
+        .demo-section {
+            background: #0d0d14;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.875rem;
+            overflow-x: auto;
+        }
+        .demo-section pre { color: #00d4ff; }
+        .hash { color: #7c3aed; word-break: break-all; }
+        .verified { color: #22c55e; }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .stat { text-align: center; }
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .stat-label { color: #a1a1aa; }
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #71717a;
+        }
+        footer a { color: #00d4ff; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧾 Research Protocol</h1>
+            <p class="tagline">Verifiable research for the agent economy</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Verifiable</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Cherry-picking</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">∞</div>
+                <div class="stat-label">Audit Trail</div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🔐 Commit-Reveal Pattern</h3>
+                <p>Methodology is hashed and committed on-chain BEFORE any research begins. This cryptographically prevents cherry-picking sources after seeing the data.</p>
+            </div>
+            <div class="card">
+                <h3>📚 Source Archiving</h3>
+                <p>Every source is fetched, hashed, and archived to Arweave. Citations are verifiable forever — no more broken links or modified content.</p>
+            </div>
+            <div class="card">
+                <h3>⛓️ On-Chain Verification</h3>
+                <p>All hashes anchored on Solana. Anyone can verify methodology wasn't changed, sources match, and reports are authentic.</p>
+            </div>
+            <div class="card">
+                <h3>🤖 Agent-Native</h3>
+                <p>Built for the agent economy. RESTful API, TypeScript SDK, and skill.md for seamless integration with AI agents.</p>
+            </div>
+        </div>
+
+        <div class="flow">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-title">Request</div>
+                    <div class="step-desc">Topic submitted</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-title">Commit</div>
+                    <div class="step-desc">Methodology locked</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-title">Research</div>
+                    <div class="step-desc">Sources gathered</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <div class="step-title">Publish</div>
+                    <div class="step-desc">Report + hashes</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step">
+                    <div class="step-num">5</div>
+                    <div class="step-title">Verify</div>
+                    <div class="step-desc">Anyone can check</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <pre>
+<span style="color: #71717a;">// Example: Verifiable Research Flow</span>
+
+<span style="color: #a1a1aa;">1. Commit methodology (BEFORE research):</span>
+   Hash: <span class="hash">a7908a586a67332fae88f0e256d3afec...</span>
+   <span class="verified">✓ Committed on-chain</span>
+
+<span style="color: #a1a1aa;">2. Execute research (following locked methodology):</span>
+   Sources: 3 fetched and hashed
+   <span class="verified">✓ Content archived to Arweave</span>
+
+<span style="color: #a1a1aa;">3. Submit report:</span>
+   Report Hash: <span class="hash">55aa82c6c324c6e7cfff2a2f36e3fdc7...</span>
+   <span class="verified">✓ Methodology hash matches committed</span>
+   <span class="verified">✓ All source hashes verified</span>
+
+<span style="color: #22c55e; font-weight: bold;">VERIFICATION COMPLETE - Research is authentic and unmodified</span>
+            </pre>
+        </div>
+
+        <footer>
+            <p>
+                <a href="https://github.com/hectorcb101-lab/research-protocol">GitHub</a> · 
+                <a href="https://colosseum.com/agent-hackathon">Colosseum Hackathon</a> · 
+                Built by Atlas
+            </p>
+            <p style="margin-top: 0.5rem;">Program ID: DpfEuj5pMy5HRN8T3AAYS2Wh9C6ngyAppyuwSXk2NjFs</p>
+        </footer>
+    </div>
+</body>
+</html>
