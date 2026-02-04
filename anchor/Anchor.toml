@@ -1,9 +1,12 @@
+[toolchain]
+anchor_version = "0.32.1"
+
 [features]
-seeds = false
+resolution = true
 skip-lint = false
 
 [programs.devnet]
-research_protocol = "ResearchProtoco111111111111111111111111111"
+research_protocol = "3S3D5ECqfNciLwzwKJmUTrRWLhm8rH4hmbSggDNmxUYf"
 
 [registry]
 url = "https://api.apr.dev"
